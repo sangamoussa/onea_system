@@ -1,0 +1,92 @@
+{
+  "state_cols": [
+    "niveau_chateau_pct",
+    "niveau_bache_pct",
+    "tarif_fcfa_kwh",
+    "heure_sin",
+    "heure_cos",
+    "puissance_solaire_kw",
+    "coupure_sonabel",
+    "efficacite_pompe1",
+    "efficacite_pompe2",
+    "temperature_C",
+    "stock_diesel_pct",
+    "icp_kwh_m3",
+    "pred_debit_h1",
+    "pred_puissance_h1",
+    "pred_debit_h6"
+  ],
+  "stats": {
+    "niveau_chateau_pct": {
+      "min": 15.0,
+      "max": 95.0
+    },
+    "niveau_bache_pct": {
+      "min": 31.0,
+      "max": 95.0
+    },
+    "tarif_fcfa_kwh": {
+      "min": 84.0,
+      "max": 165.0
+    },
+    "heure_sin": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "heure_cos": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "puissance_solaire_kw": {
+      "min": 0.0,
+      "max": 498.4
+    },
+    "coupure_sonabel": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "efficacite_pompe1": {
+      "min": 0.739,
+      "max": 0.95
+    },
+    "efficacite_pompe2": {
+      "min": 0.718,
+      "max": 0.93
+    },
+    "temperature_C": {
+      "min": 18.0,
+      "max": 44.0
+    },
+    "stock_diesel_pct": {
+      "min": 30.0,
+      "max": 100.0
+    },
+    "icp_kwh_m3": {
+      "min": 0.4,
+      "max": 0.727
+    },
+    "pred_debit_h1": {
+      "min": 356.1,
+      "max": 842.7
+    },
+    "pred_puissance_h1": {
+      "min": 248.4,
+      "max": 639.4
+    },
+    "pred_debit_h6": {
+      "min": 300.6,
+      "max": 880.9
+    }
+  },
+  "n_actions": 8,
+  "action_names": [
+    "STOP",
+    "POMPE1-SONABEL",
+    "POMPE2-SONABEL",
+    "POMPES12-SONABEL",
+    "POMPE1-SOLAIRE",
+    "POMPE2-SOLAIRE",
+    "POMPE1-DIESEL",
+    "POMPES12-DIESEL"
+  ]
+}

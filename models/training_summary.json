@@ -1,0 +1,46 @@
+{
+  "date_entrainement": "2026-04-11T11:10:40.245452",
+  "csv_source": "data/A_energie_horaire_station_2021_2024.csv",
+  "n_train": 26209,
+  "n_test": 8713,
+  "features": [
+    "puissance_totale_kw",
+    "temperature_C",
+    "humidite_pct",
+    "heure_sin",
+    "heure_cos",
+    "mois_sin",
+    "mois_cos",
+    "is_weekend",
+    "is_ferie",
+    "tarif_sonabel_fcfa_kwh",
+    "part_solaire_pct",
+    "part_diesel_pct",
+    "puissance_solaire_kw",
+    "niveau_chateau_pct"
+  ],
+  "targets": [
+    "debit_refoulement_m3h",
+    "puissance_totale_kw",
+    "cout_total_fcfa"
+  ],
+  "window_in": 48,
+  "horizon_out": 24,
+  "resultats": {
+    "debit_refoulement_m3h": {
+      "mae": 57.45549774169922,
+      "r2": -0.17676615715026855,
+      "smape": 9.208385467529297
+    },
+    "puissance_totale_kw": {
+      "mae": 47.914276123046875,
+      "r2": 0.001685500144958496,
+      "smape": 9.126723289489746
+    },
+    "cout_total_fcfa": {
+      "mae": 9034.5869140625,
+      "r2": 0.6396885514259338,
+      "smape": 18.92576789855957
+    }
+  }
+}

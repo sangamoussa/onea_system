@@ -1,0 +1,41 @@
+{
+  "date": "2026-04-11T13:41:48.239839",
+  "ae_features": [
+    "efficacite_pct",
+    "vibration_mm_s",
+    "temperature_moteur_C",
+    "icp_kwh_m3",
+    "pression_entree_bar",
+    "pression_sortie_bar",
+    "courant_A",
+    "cycles_demarrage_24h"
+  ],
+  "latent_dim": 2,
+  "n_train_normal": 21868,
+  "metrics": {
+    "accuracy": 0.8137596014906077,
+    "precision": 0.9845583593661482,
+    "recall": 0.7654661230242625,
+    "f1": 0.8612977450529222
+  },
+  "seuils": {
+    "attention": 1.2043346464633942,
+    "critique": 1.9435339272022247
+  },
+  "test_normal": {
+    "erreur_reconstruction": 2.136899,
+    "score_anomalie": 1.0,
+    "niveau_alerte": "CRITIQUE",
+    "feature_critique": "temperature_moteur_C",
+    "seuil_attention": 1.204335,
+    "seuil_critique": 1.943534
+  },
+  "test_anomalie": {
+    "erreur_reconstruction": 30.000729,
+    "score_anomalie": 1.0,
+    "niveau_alerte": "CRITIQUE",
+    "feature_critique": "efficacite_pct",
+    "seuil_attention": 1.204335,
+    "seuil_critique": 1.943534
+  }
+}

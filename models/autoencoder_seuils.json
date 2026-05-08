@@ -1,0 +1,19 @@
+{
+  "mean_erreur_normale": 0.4651353657245636,
+  "std_erreur_normale": 0.3695996403694153,
+  "seuil_attention": 1.2043346464633942,
+  "seuil_critique": 1.9435339272022247,
+  "percentile_95": 1.0885931253433228,
+  "percentile_99": 1.6952528953552246,
+  "ae_features": [
+    "efficacite_pct",
+    "vibration_mm_s",
+    "temperature_moteur_C",
+    "icp_kwh_m3",
+    "pression_entree_bar",
+    "pression_sortie_bar",
+    "courant_A",
+    "cycles_demarrage_24h"
+  ],
+  "latent_dim": 2
+}
